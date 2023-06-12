@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d1da07f02ac604ca041049ca8e990b, type: 3}
+  m_Name: w2
+  m_EditorClassIdentifier: 
+  productName: warrior2
+  productSprite: {fileID: 21300000, guid: 21fd28183feefae43950ba557bd15beb, type: 2}
+  cellSize: {x: 1, y: 1}
+  myProductList: []
+  animation_controller: {fileID: 9100000, guid: ccfd1ab13dc1f0747af29f7d1ebfdb9d, type: 2}
+  damage: 5
+  health: 10
+  movementSpeed: 1
+  type: 1
