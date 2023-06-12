@@ -26,6 +26,7 @@ public class Tower : Build
     }
     public override void Dead()
     {
+        SetPathNodeList(true);
         gameObject.SetActive(false);
     }
 

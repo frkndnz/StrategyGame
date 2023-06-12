@@ -50,6 +50,8 @@ public class EnemyBarrack : Build
         {
             Production(Random.Range(0, 2));
             yield return new WaitForSeconds(Random.Range(5f,15f));
+            if (!GameManager.scr.isGame)
+                break;
         }
     }
     public override void Production(int productIndex)

@@ -121,7 +121,10 @@ public class Soldier : MonoBehaviour
                 pathIndex++;
             }
             yield return null;
+            
+
         }
+        
         myCurrentNode = _movementPath[_movementPath.Count - 1];
         myCurrentNode.walkable = false;
         _isMove = false;
@@ -130,6 +133,8 @@ public class Soldier : MonoBehaviour
     }
     private void StopMovement()
     {
+        myCurrentNode = PathManager.scr.GetPathNode(transform.position);
+        myCurrentNode.walkable = false;
         _isMove = false;
         if (myCurrentNode != TargetNode && TargetNode)
             TargetNode.walkable = true;
@@ -144,6 +149,8 @@ public class Soldier : MonoBehaviour
     public void Death()
     {
         // vfx and collider;
+        if (myCurrentNode)
+            myCurrentNode.walkable = true;
         _isDead = true;
         gameObject.SetActive(false);
     }
